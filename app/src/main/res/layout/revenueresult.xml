@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="#ffffd6cc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revenue.."
+        android:id="@+id/textView"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="28dp"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffff4d68" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="summary"
+        android:id="@+id/summary"
+        android:layout_marginBottom="76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView"
+        android:onClick="buttonRevenue"
+        android:background="#ffd3a0ff"
+        android:textColor="#ffffffff"
+        android:textSize="17dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="revenue"
+        android:id="@+id/revenue"
+        android:layout_alignTop="@+id/summary"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="46dp"
+        android:onClick="buttonRevenue"
+        android:background="#ffd3a0ff"
+        android:textColor="#ffffffff"
+        android:textSize="17dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/summary"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/v19"
+        android:layout_marginBottom="329dp"
+        android:layout_above="@+id/summary"
+        android:layout_toEndOf="@+id/textView" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffd6cc">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="revenue"
+        android:id="@+id/revenue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginBottom="69dp"
+        android:onClick="buttonSummary"
+        android:textColor="#ffffffff"
+        android:background="#ffd3a0ff"
+        android:textSize="17dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="summary"
+        android:id="@+id/summary"
+        android:layout_alignBottom="@+id/revenue"
+        android:layout_toEndOf="@+id/revenue"
+        android:layout_marginStart="43dp"
+        android:nestedScrollingEnabled="false"
+        android:onClick="buttonSummary"
+        android:textColor="#ffffffff"
+        android:background="#ffd3a0ff"
+        android:textSize="17dp"
+        android:layout_marginLeft="60dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="summary by day"
+        android:id="@+id/day"
+        android:onClick="buttonSummary"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textSize="40dp"
+        android:background="#ffff54bb"
+        android:textColor="#ffffffff"
+        android:layout_marginBottom="-30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="summary by month"
+        android:id="@+id/month"
+        android:onClick="buttonSummary"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/day"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:background="#ffff54bb"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>

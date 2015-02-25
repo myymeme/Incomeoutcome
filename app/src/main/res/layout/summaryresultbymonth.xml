@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffd6cc">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="revenue"
+        android:id="@+id/revenue"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="summaryByMonthButton"
+        android:background="#ffd3a0ff"
+        android:textColor="#ffffffff"
+        android:textSize="17dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="summary"
+        android:id="@+id/summary"
+        android:layout_alignBottom="@+id/revenue"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="61dp"
+        android:onClick="summaryByMonthButton"
+        android:background="#ffd3a0ff"
+        android:textColor="#ffffffff"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summary by month"
+        android:id="@+id/textView2"
+        android:textSize="40dp"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffef32ff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summary of Month"
+        android:id="@+id/tvSumMonth"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:textColor="#ffff387c"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income"
+        android:id="@+id/tvIncome"
+        android:layout_below="@+id/tvSumMonth"
+        android:layout_alignStart="@+id/tvSumMonth"
+        android:layout_marginTop="33dp"
+        android:textIsSelectable="false"
+        android:textColor="#ffff5db8"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense"
+        android:id="@+id/tvExpense"
+        android:layout_below="@+id/tvIncome"
+        android:layout_alignStart="@+id/tvIncome"
+        android:layout_marginTop="21dp"
+        android:textColor="#ffff5db8"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance"
+        android:id="@+id/tvBalance"
+        android:layout_below="@+id/tvExpense"
+        android:layout_alignStart="@+id/tvExpense"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffff5db8"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
